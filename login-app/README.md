@@ -1,27 +1,23 @@
-# LoginApp
+## User Management Application
+ # Overview
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+This Angular-based single-page application (SPA) provides user authentication and task management functionalities, integrated with Firebase Authentication and Firebase Realtime Database.
 
-## Development server
+# Key Features
+User Authentication: Sign up, log in, and maintain sessions with Firebase.
+Task Management: Create, view, and delete tasks on a protected dashboard.
+Responsive Design: Ensures a seamless experience across devices.
+Component Structure
+AppComponent: Bootstraps the app and handles session management.
+HeaderComponent: Displays navigation links based on user authentication status.
+DashboardComponent: Protected component for task management, accessible only to logged-in users.
+LoginComponent: Manages user authentication with forms and error handling.
+LogoutComponent: Handles user logout and session clearing.
+Services
+AuthService: Manages authentication and session persistence.
+TaskServiceService: Handles CRUD operations for tasks with Firebase.
+Firebase Integration
+Authentication: Manages user sign-up, login, and session handling.
+Realtime Database: Stores and manages user tasks.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Hosting URL: https://login-signup-36373.web.app
