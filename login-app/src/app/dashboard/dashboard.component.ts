@@ -1,6 +1,5 @@
 import { Component,inject , OnInit } from '@angular/core';
 import { CreateTaskComponent } from './create-task/create-task.component';
-import { TaskDetailsComponent } from './task-details/task-details.component';
 import { NgClass, NgFor, NgIf } from '@angular/common';
 import { Task } from '../Model/task';
 import{ Subscription } from 'rxjs';
@@ -12,7 +11,7 @@ import { TaskServiceService } from '../Services/task-service.service';
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [CreateTaskComponent, TaskDetailsComponent, NgIf, NgFor, 
+  imports: [CreateTaskComponent, NgIf, NgFor, 
     NgClass, LoaderComponent, SnackbarComponent
   ],
   templateUrl: './dashboard.component.html',
@@ -46,6 +45,7 @@ export class DashboardComponent implements OnInit{
     this.showCreateForm = false;
   }
   onCreateForm(){
+    console.log('showCreateForm = true')
     this.showCreateForm = true;
     this.isEditMode = false;
     this.selectedTask = {title: '', assignedTo: '', createdAt: '', priority: '', status: '' }

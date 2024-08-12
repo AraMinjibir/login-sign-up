@@ -1,4 +1,4 @@
-.app-login-form{
+.container-fluid{
     width: 600px;
     height: 360px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -29,4 +29,8 @@
     background-color: transparent;
     color: #0e0ede;
     cursor: pointer;
+}
+
+.w-50{
+    width: 90% !important;
 }

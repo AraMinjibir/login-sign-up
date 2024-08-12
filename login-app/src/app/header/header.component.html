@@ -3,9 +3,9 @@
         <h2>User Management</h2>
     </div>
     <div class="header-nav">
-        <a routerLink = "home">HOME</a>
-        <a routerLink = "dashboard">DASHBOARD</a>
-        <a routerLink = "login">LOGIN</a>
+        <a routerLink="home">HOME</a>
+        <a routerLink="dashboard" *ngIf="isLoggedIn">DASHBOARD</a>
+        <a routerLink="login" *ngIf="!isLoggedIn">LOGIN</a>
+        <a routerLink="logout" (click)="onLogout()" *ngIf="isLoggedIn">LOGOUT</a>
     </div>
 </header>
-
