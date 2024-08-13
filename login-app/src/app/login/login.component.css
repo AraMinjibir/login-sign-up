@@ -1,5 +1,5 @@
-.container-fluid{
-    width: 600px;
+.container{
+    max-width: 600px;
     height: 360px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 30px 30px;
